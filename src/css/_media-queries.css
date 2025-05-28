@@ -1,0 +1,33 @@
+/* src/css/_media-queries.css */
+
+/* --- Media Queries for Responsiveness --- */
+@media (min-width: 600px) {
+    .welcome-buttons {
+        flex-direction: row;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 900px) {
+    main {
+        padding: 20px 0;
+    }
+
+    #quizLayout {
+        grid-template-columns: 1fr 200px; /* Main content + side panel */
+        align-items: start;
+    }
+
+    #quizContent {
+        margin-right: 0; /* Remove potential margin for the content area */
+        padding-bottom: 20px;
+    }
+
+    #questionNavPanel {
+        position: sticky; /* Sticky sidebar */
+        top: 80px; /* Adjust based on header height */
+        height: fit-content;
+        max-height: calc(100vh - 100px); /* Fill remaining viewport height */
+        overflow-y: auto; /* Enable scrolling for many question boxes */
+    }
+}

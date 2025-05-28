@@ -1,0 +1,24 @@
+# Node.js
+node_modules/
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+.pnpm-store/
+
+# Parcel
+.parcel-cache/
+dist/
+
+# Logs
+logs
+*.log
+
+# Runtime data
+*.sqlite
+*.pot
+*.json
+*.env
+
+# Editor directories and files
+.vscode/ # VSCode
+.history/ # VSCode Local History

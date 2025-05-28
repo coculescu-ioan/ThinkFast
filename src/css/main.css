@@ -1,0 +1,24 @@
+/* src/css/main.css */
+
+/* Base styles and variables */
+@import './_base.css';
+@import './_variables.css';
+
+/* Layout specific styles */
+@import './_layout.css';
+
+/* Component specific styles */
+@import './components/_buttons.css';
+@import './components/_forms.css';
+@import './components/_header.css';
+@import './components/_welcome-screen.css';
+@import './components/_quiz-layout.css';
+@import './components/_question-panel.css';
+@import './components/_question.css';
+@import './components/_results.css';
+
+/* Utilities (e.g., helper classes like .hidden) */
+@import './_utilities.css';
+
+/* Media queries (if not directly within components) */
+@import './_media-queries.css';

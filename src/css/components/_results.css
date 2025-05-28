@@ -1,0 +1,9 @@
+/* src/css/components/_results.css */
+
+#results {
+    margin-top: 30px; /* Kept margin top for separation from question boxes */
+    padding: 20px;
+    background-color: var(--primary-dark);
+    border-radius: 8px;
+    color: var(--text-light);
+}

@@ -1,0 +1,16 @@
+/* src/css/components/_header.css */
+
+#timer {
+    background-color: var(--button-primary);
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1.1em;
+}
+
+#timer.fixed-timer {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    align-self: flex-end;
+    margin-left: auto;
+}

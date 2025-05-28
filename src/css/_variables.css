@@ -1,0 +1,17 @@
+/* src/css/_variables.css */
+
+:root {
+    --primary: #9bd7d8;
+    --primary-dark: #008bad;
+    --button-primary: #00566c;
+    --button-primary-dark: #012a34;
+
+    --text-light: white;
+    --correct: lime;
+    --incorrect: red;
+
+    --q-answered: #808080;
+    --q-not-answered: #555555;
+    --q-correct: #006800;
+    --q-incorrect: #700b00;
+}

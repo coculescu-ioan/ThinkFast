@@ -1,0 +1,61 @@
+/* src/css/components/_question-panel.css */
+
+#questionNavPanel {
+    background-color: var(--primary-dark);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    text-align: center;
+}
+
+#questionNavPanel h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: var(--text-light);
+    font-size: 1.5em;
+}
+
+#questionBoxes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.question-box {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--q-not-answered);
+    color: var(--text-light);
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    user-select: none; /* Prevent text selection */
+}
+
+.question-box:hover:not(.current) {
+    transform: translateY(-2px);
+    background-color: var(--q-answered);
+}
+
+.question-box.answered {
+    background-color: var(--q-answered);
+}
+
+.question-box.correct {
+    background-color: var(--q-correct);
+}
+
+.question-box.incorrect {
+    background-color: var(--q-incorrect);
+}
+
+.question-box.current {
+    border: 2px solid var(--text-light);
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}

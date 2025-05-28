@@ -1,0 +1,40 @@
+/* src/css/_layout.css */
+
+header {
+    background-color: var(--primary-dark);
+    color: var(--text-light);
+    padding: 15px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2em;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px; /* Increased max-width to accommodate side panel */
+    margin: 0 auto;
+}
+
+#quizLayout {
+    display: grid;
+    grid-template-columns: 1fr; /* Default for mobile */
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+}

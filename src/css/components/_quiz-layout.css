@@ -1,0 +1,9 @@
+/* src/css/components/_quiz-layout.css */
+
+#quizContent {
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

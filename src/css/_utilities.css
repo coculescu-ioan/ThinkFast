@@ -1,0 +1,23 @@
+/* src/css/_utilities.css */
+
+.hidden {
+    display: none !important; /* Use !important for utility classes to ensure override */
+}
+
+.correct {
+    color: var(--correct);
+    font-weight: bold;
+}
+
+.correct::before {
+    content: "✓ ";
+}
+
+.incorrect {
+    color: var(--incorrect);
+    font-weight: bold;
+}
+
+.incorrect::before {
+    content: "✗ ";
+}
