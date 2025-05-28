@@ -1,8 +1,5 @@
 # ThinkFast
 
-## About
-A simple, interactive quiz application built with modern JavaScript.
-
 ## Features
 - Multiple-choice questions
 - Timer for each question
