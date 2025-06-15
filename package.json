@@ -1,0 +1,16 @@
+{
+  "name": "thinkfast",
+  "version": "1.0.0",
+  "description": "A fast quiz app",
+  "source": "public/index.html",
+  "scripts": {
+    "start": "parcel public/index.html",
+    "build": "parcel build public/index.html --public-url /ThinkFast/"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.12.0"
+  }
+}

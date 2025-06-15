@@ -16,7 +16,6 @@ logs
 # Runtime data
 *.sqlite
 *.pot
-*.json
 *.env
 
 # Editor directories and files
