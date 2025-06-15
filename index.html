@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ThinkFast</title>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/idea-bulb.d1c86a9c.png">
+    <link rel="stylesheet" href="/public.34df27b5.css">
+</head>
+<body>
+    <header>
+        <h1>ThinkFast</h1>
+        <div id="timer" class="fixed-timer hidden">Time: 00:00</div>
+    </header>
+    
+    <main>
+        <div id="welcomeScreen" class="centered-container">
+            <h2>Welcome to ThinkFast!</h2>
+            
+            <div class="input-group">
+                <button id="addQuestionsBtn" class="action-button full-width">
+                    <span class="icon-plus">+</span> Add Question Set (JSON)
+                </button>
+            </div>
+
+            <div class="input-group">
+                <label for="quizMode">Select Quiz Mode:</label>
+                <select id="quizMode">
+                    <option value="practice">Practice (No Time Limit)</option>
+                    <option value="exam">Exam (Time Limit)</option>
+                </select>
+            </div>
+
+            <div class="input-group">
+                <label for="numQuestions">Number of Questions (max: <span id="maxQuestions">0</span>):</label>
+                <input type="number" id="numQuestions" min="1" value="10">
+            </div>
+
+            <div class="input-group" id="timeLimitGroup">
+                <label for="timeLimit">Time Limit (minutes):</label>
+                <input type="number" id="timeLimit" min="1" value="30">
+            </div>
+
+            <div class="welcome-buttons">
+                <button id="startQuizBtn" class="action-button">Start Quiz</button>
+            </div>
+        </div>
+
+        <div id="quizLayout" class="hidden">
+            <div id="quizContent">
+                <div id="testContainer"></div> 
+                
+                <div class="question-navigation-controls">
+                    <button id="prevQuestionBtn" class="nav-button hidden">← Previous</button>
+                    <button id="nextQuestionBtn" class="nav-button">Next →</button> 
+                    <button id="resetQuizBtn" class="nav-button">Reset Quiz</button>
+                </div>
+            </div>
+
+            <div id="questionNavPanel">
+                <h3>Question Navigation</h3>
+                <div id="questionBoxes">
+                    </div>
+                <div id="results"></div> 
+            </div>
+        </div>
+    </main>
+
+    <script type="module" src="/public.b828852a.js"></script>
+
+</body></html>
